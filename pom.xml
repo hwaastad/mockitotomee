@@ -29,6 +29,7 @@
             <groupId>org.apache.openejb</groupId>
             <artifactId>openejb-core</artifactId>
             <version>${openejb.test.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.openejb</groupId>
@@ -47,8 +48,7 @@
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
-        </dependency>
-        
+        </dependency>       
         <dependency>
             <groupId>com.fasterxml.jackson.jaxrs</groupId>
             <artifactId>jackson-jaxrs-json-provider</artifactId>
@@ -57,6 +57,7 @@
     </dependencies>
 
     <build>
+        <finalName>MockitoTomEE</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

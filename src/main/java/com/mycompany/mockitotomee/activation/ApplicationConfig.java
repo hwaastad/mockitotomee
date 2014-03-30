@@ -11,13 +11,15 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
 
 /**
  *
  * @author helge
  */
 @ApplicationPath("services")
-public class ApplicationConfig {
+public class ApplicationConfig extends Application {
+    @Override
     public Set<Class<?>> getClasses() {
 //        return new HashSet<Class<?>>(Arrays.asList(SimpleRESTPojo.class, SimpleRESTEJB.class));
         return new HashSet<Class<?>>(Arrays.asList(GreetingService.class));

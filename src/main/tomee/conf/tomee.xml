@@ -12,6 +12,9 @@
         maxSixe         = 100
     </Container>
     
+    <Resource id="myDataSource"  type="DataSource">
+    </Resource>
+    
     <Resource id="MailProvider" type="javax.mail.Session">
         mail.smtp.host          = 127.0.0.1
         mail.smtp.port          = 25
@@ -20,5 +23,4 @@
         mail.smtp.user          = someuser
         password                = mypassword
     </Resource>
-
 </tomee>
